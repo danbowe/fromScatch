@@ -9,9 +9,17 @@
 @import "bower_components/neat/app/assets/stylesheets/_neat.scss";
 // endbower
 
+// Font import
+@import "../fonts/stylesheet.css";
+
+// Variables
+$baseFont-light: 'bebas_neuelight';
+$baseFont-norm: 'bebas_neuebook';
+$baseFont-bold: 'bebas_neue_regularregular';
+
 body {
   background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $baseFont-norm;
   color: #333;
 }
 
@@ -25,6 +33,7 @@ body {
   border-radius: 6px;
   padding: 60px;
   h1 {
+    font-family: $baseFont-bold;
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
